@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Base styles */
+body, h1, h2, h3, h4, h5, h6, p, a, input, button {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Layout spacing */
+.cards-col {
+    padding-left: 1rem;   /* space from screen edge */
+    padding-right: 2rem;  /* space between cards and main content */
+}
+
+.side-text {
+    padding-left: 2rem;   /* space between cards and main content */
+}
+
+/* Images */
+.trifold {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.android {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.flip {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.square {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.halfwidth {
+    width: 20%;
+}
+
+/* Series styling */
+.series {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* Cards hover animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Links */
+.no-underline {
+    text-decoration: none;
+}
+
+/* Navigation and footer */
+nav {
+    border-bottom: 1px solid darkslategrey;
+}
+
+footer {
+    border-top: 1px solid darkslategrey;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Impressum */
+.impressum {
+    text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .cards-col, .side-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .side-text {
+        margin-top: 2rem;
+    }
+}
+
+.bbmobile {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.notwhite {
+    color: black;
+}
+
+.side-text h1 {
+    font-size: 3rem;
+}
+.side-text h2 {
+    font-size: 2rem;
+}
+.side-text p {
+    font-size: 1.25rem;
+}
+.side-text .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cards-col .card {
+    font-size: 1.05rem;
+}
+.cards-col .card-title {
+    font-size: 1.2rem;
+}
+.cards-col .card-header {
+    font-size: 1rem;
+}
